@@ -1,7 +1,6 @@
 package assignment_Select_Class;
 
 import java.util.List;
-import java.util.Scanner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

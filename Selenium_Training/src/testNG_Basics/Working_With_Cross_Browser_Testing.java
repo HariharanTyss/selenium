@@ -13,6 +13,6 @@ public class Working_With_Cross_Browser_Testing extends Base_Test_Cross_Browser 
 		driver.findElement(By.partialLinkText("Reg")).click();
 		driver.findElement(By.id("Email")).sendKeys("nikhil26@gmail.com");
 		driver.findElement(By.id("Password")).sendKeys("nikhil123");
-		//driver.findElement(By.xpath("//input[@value='Log in']")).click();
+		driver.findElement(By.xpath("//input[@value='Log in']")).click();
 	}
 }

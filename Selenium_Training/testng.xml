@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DWS_Operations_Suite">
+	<parameter name="URL" value="https://demowebshop.tricentis.com/"></parameter>
+	<!-- <parameter name="username" value="nikhil26@gmail.com"></parameter>
+		<parameter name="password" value="nikhil123"></parameter>
+		<parameter name="username" value="chandelwar7@gmail.com"></parameter>-->
+  <test thread-count="5" name="TestCase1">
+    <classes>
+      <class name="test_Cases.DWS_Register_Test_Case"/>
+      <class name="test_Cases.DWS_Login_Test_Case"/>
+      <class name="test_Cases.DWS_Newsletter_Test_Case"/>
+      <class name="test_Cases.DWS_Community_Poll_Test_Case"/>
+      <class name="test_Cases.DWS_Search_Test_Case"/>
+    </classes>
+  </test> <!-- TestCase1 -->
+</suite> <!-- DWS_Operations_Suite -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <!-- We can include or exclude groups into test level because it can be applicable for all the
+	  classes present inside this test-->
+	  <groups>
+		  <run>
+			  <!-- With the help of this, we can include those test cases only in which
+			  we provided the groups attribute-->
+			  <include name="SmokeTest"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="testNG_Basics.Test_NG_Groups_Functionality2"/>
+      <class name="testNG_Basics.Test_NG_Groups_Functionality1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

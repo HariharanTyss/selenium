@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <classes>
+      <class name="testNG_Basics.Working_With_Cross_Browser_Testing">
+        <parameter name="browser" value="firefox"/>
+        <methods>
+          <include name="browser_Tear_Down"/>
+          <include name="browser_Setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- testNG_Basics.Working_With_Cross_Browser_Testing -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <classes>
+      <class name="testNG_Basics.Working_With_Cross_Browser_Testing">
+        <parameter name="browser" value="chrome"/>
+        <methods>
+          <include name="browser_Tear_Down"/>
+          <include name="browser_Setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- testNG_Basics.Working_With_Cross_Browser_Testing -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

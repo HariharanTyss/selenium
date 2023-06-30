@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNG_Basics.Test_NG_Excluding_By_XML_File_Functionality">
+		  <methods>
+			   <!-- This will not execute the excluded methods-->
+			  <!-- This is usefull when you don't want to execute some no. of test cases from many-->
+			  <exclude name="SubscribeTest"></exclude>
+			  <exclude name="SearchTest"></exclude>
+		  </methods>
+	  </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

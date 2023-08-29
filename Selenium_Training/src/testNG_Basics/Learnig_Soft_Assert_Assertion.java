@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
 public class Learnig_Soft_Assert_Assertion {
 
 	@Test
-	public void softAssert() {
+	public void softAssert() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -26,9 +26,11 @@ public class Learnig_Soft_Assert_Assertion {
 		//If test script fails then window will not get closed.
 		
 		driver.findElement(By.partialLinkText("Log")).click();
-		
+		Thread.sleep(3000);
+		driver.quit();
 		ast.assertAll();	//it is a compulsory method, to get the error message after script failure
 							//otherwise after failure also, the output is "passed".
-		driver.quit();
+							//It should be last line of any code.
+		
 	}
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Basics.Working_With_Cross_Browser_Testing">
+      <class name="test_Cases.DWS_Login_Test_Case">
         <methods>
           <include name="browser_Tear_Down"/>
+          <include name="Login"/>
           <include name="browser_Setup"/>
-          <include name="loginTest"/>
         </methods>
-      </class> <!-- testNG_Basics.Working_With_Cross_Browser_Testing -->
+      </class> <!-- test_Cases.DWS_Login_Test_Case -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

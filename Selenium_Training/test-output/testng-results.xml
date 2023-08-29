@@ -1,55 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-29T17:32:22 IST" name="Suite" finished-at="2023-06-29T17:32:31 IST" duration-ms="9330">
+  <suite started-at="2023-08-10T12:07:02 IST" name="Default suite" finished-at="2023-08-10T12:07:02 IST" duration-ms="69">
     <groups>
     </groups>
-    <test started-at="2023-06-29T17:32:22 IST" name="ChromeTest" finished-at="2023-06-29T17:32:28 IST" duration-ms="6141">
-      <class name="testNG_Basics.Working_With_Cross_Browser_Testing">
-        <test-method is-config="true" signature="browser_Setup(java.lang.String)[pri:0, instance:testNG_Basics.Working_With_Cross_Browser_Testing@5bd03f44]" started-at="2023-06-29T17:32:22 IST" name="browser_Setup" finished-at="2023-06-29T17:32:27 IST" duration-ms="5055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-08-10T12:07:02 IST" name="Default test" finished-at="2023-08-10T12:07:02 IST" duration-ms="69">
+      <class name="test_Cases.DWS_Login_Test_Case">
+        <test-method is-config="true" signature="browser_Setup(java.lang.String)[pri:0, instance:test_Cases.DWS_Login_Test_Case@a9cd3b1]" started-at="2023-08-10T12:07:02 IST" name="browser_Setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691649422755" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by BeforeClass on method browser_Setup but has not been marked @Optional or defined
+in C:\Users\chand\AppData\Local\Temp\testng-eclipse--330022119\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by BeforeClass on method browser_Setup but has not been marked @Optional or defined
+in C:\Users\chand\AppData\Local\Temp\testng-eclipse--330022119\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_Setup -->
-        <test-method signature="loginTest()[pri:0, instance:testNG_Basics.Working_With_Cross_Browser_Testing@5bd03f44]" started-at="2023-06-29T17:32:27 IST" name="loginTest" finished-at="2023-06-29T17:32:28 IST" duration-ms="865" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="browser_Tear_Down()[pri:0, instance:testNG_Basics.Working_With_Cross_Browser_Testing@5bd03f44]" started-at="2023-06-29T17:32:28 IST" name="browser_Tear_Down" finished-at="2023-06-29T17:32:28 IST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser_Tear_Down -->
-      </class> <!-- testNG_Basics.Working_With_Cross_Browser_Testing -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2023-06-29T17:32:22 IST" name="FirefoxTest" finished-at="2023-06-29T17:32:31 IST" duration-ms="9330">
-      <class name="testNG_Basics.Working_With_Cross_Browser_Testing">
-        <test-method is-config="true" signature="browser_Setup(java.lang.String)[pri:0, instance:testNG_Basics.Working_With_Cross_Browser_Testing@c33b74f]" started-at="2023-06-29T17:32:22 IST" name="browser_Setup" finished-at="2023-06-29T17:32:30 IST" duration-ms="7506" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:test_Cases.DWS_Login_Test_Case@a9cd3b1]" started-at="2023-08-10T12:07:02 IST" name="Login" data-provider="Login_Data" finished-at="2023-08-10T12:07:02 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[nikhil26@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nikhil123]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by BeforeClass on method browser_Setup but has not been marked @Optional or defined
+in C:\Users\chand\AppData\Local\Temp\testng-eclipse--330022119\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by BeforeClass on method browser_Setup but has not been marked @Optional or defined
+in C:\Users\chand\AppData\Local\Temp\testng-eclipse--330022119\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browser_Setup -->
-        <test-method signature="loginTest()[pri:0, instance:testNG_Basics.Working_With_Cross_Browser_Testing@c33b74f]" started-at="2023-06-29T17:32:30 IST" name="loginTest" finished-at="2023-06-29T17:32:30 IST" duration-ms="673" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="browser_Tear_Down()[pri:0, instance:testNG_Basics.Working_With_Cross_Browser_Testing@c33b74f]" started-at="2023-06-29T17:32:30 IST" name="browser_Tear_Down" finished-at="2023-06-29T17:32:31 IST" duration-ms="1124" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="browser_Tear_Down()[pri:0, instance:test_Cases.DWS_Login_Test_Case@a9cd3b1]" started-at="2023-08-10T12:07:02 IST" name="browser_Tear_Down" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691649422796" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_Tear_Down -->
-      </class> <!-- testNG_Basics.Working_With_Cross_Browser_Testing -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- test_Cases.DWS_Login_Test_Case -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

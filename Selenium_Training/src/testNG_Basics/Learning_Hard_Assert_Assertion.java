@@ -19,7 +19,7 @@ public class Learning_Hard_Assert_Assertion {
 		driver.get("https://demowebshop.tricentis.com/");
 		
 		//It used for verification purpose, instead of writing 4 lines of code by using if-else
-		Assert.assertEquals(driver.getTitle(), "Demo Web Shop");
+		Assert.assertEquals(driver.getTitle(), "Demo We Shop","title is wrong");
 		
 		driver.findElement(By.partialLinkText("Log")).click();
 	}

@@ -1,5 +1,7 @@
 package tyss_STC_DWS;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +21,7 @@ public static void main(String[] args) throws InterruptedException {
 		//open the website
 		driver.get("https://demowebshop.tricentis.com/");
 		//Thread.sleep(2000);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ico-login"))));
 		
 		//fill all necessary details

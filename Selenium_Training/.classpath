@@ -28,7 +28,7 @@
 	<classpathentry kind="lib" path="D:/selenium/apache POI/poi-bin-5.2.3/poi-ooxml-full-5.2.3.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/apache POI/poi-bin-5.2.3/poi-ooxml-lite-5.2.3.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/apache POI/poi-bin-5.2.3/poi-scratchpad-5.2.3.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Users/chand/Downloads/jar_files/webdrivermanager-5.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/selenium-server-4.12.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

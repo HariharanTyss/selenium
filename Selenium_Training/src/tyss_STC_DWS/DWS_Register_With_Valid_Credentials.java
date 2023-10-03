@@ -1,5 +1,6 @@
 package tyss_STC_DWS;
 
+import java.time.Duration;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -21,7 +22,7 @@ public class DWS_Register_With_Valid_Credentials {
 		//launching website
 		driver.get("https://demowebshop.tricentis.com/");
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("Register"))));
 		
 		Random r = new Random();

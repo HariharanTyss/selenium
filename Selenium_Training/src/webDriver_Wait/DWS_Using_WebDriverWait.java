@@ -1,5 +1,7 @@
 package webDriver_Wait;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +17,7 @@ public class DWS_Using_WebDriverWait {
 		driver.get("https://demowebshop.tricentis.com/");
 		//Thread.sleep(3000);
 		//WebDriverWait
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("Register"))));
 		
 		driver.findElement(By.id("small-searchterms")).sendKeys("mobiles");
